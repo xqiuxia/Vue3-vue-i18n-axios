@@ -14,15 +14,15 @@
         :to="item.url"
         >{{ item.title }}</van-tabbar-item
       > -->
-      <van-tabbar-item icon="home-o" to="/index">{{
+      <!-- <van-tabbar-item icon="home-o" to="/index">{{
         $t("index.index")
-      }}</van-tabbar-item>
+      }}</van-tabbar-item> -->
       <van-tabbar-item icon="records" to="/list">{{
         $t("index.listNow")
       }}</van-tabbar-item>
-      <van-tabbar-item icon="label-o" to="/totalList">{{
+      <!-- <van-tabbar-item icon="label-o" to="/totalList">{{
         $t("index.listAll")
-      }}</van-tabbar-item>
+      }}</van-tabbar-item> -->
       <van-tabbar-item icon="user-circle-o" to="/user">{{
         $t("index.user")
       }}</van-tabbar-item>
@@ -44,21 +44,21 @@ export default {
 
     const state = reactive({
       tabs: [
-        {
-          title: ref(t("index.index")),
-          url: "/index",
-          icon: "home-o",
-        },
+        // {
+        //   title: ref(t("index.index")),
+        //   url: "/index",
+        //   icon: "home-o",
+        // },
         {
           title: "列表",
           url: "/list",
           icon: "records",
         },
-        {
-          title: "总列表",
-          url: "/totalList",
-          icon: "label-o",
-        },
+        // {
+        //   title: "总列表",
+        //   url: "/totalList",
+        //   icon: "label-o",
+        // },
         {
           title: "我的",
           url: "/user",

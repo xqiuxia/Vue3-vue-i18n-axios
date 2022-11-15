@@ -34,5 +34,10 @@ const routes = [
   },
   { name: "detail", path: "/detail", component: () => import("@/view/detail") },
   { name: "login", path: "/login", component: () => import("@/view/login") },
+  {
+    name: "download",
+    path: "/download",
+    component: () => import("@/view/downLoad"),
+  },
 ];
 export default routes;

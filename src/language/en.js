@@ -19,4 +19,7 @@ export default {
     loginT: "Log in immediately",
     registerT: "Register immediately",
   },
+  user:{
+    logOut:"Log Out"
+  }
 };

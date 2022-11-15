@@ -4,8 +4,14 @@ const request = require("../utils/request");
 
 /* 通过module.exports方式提供给外部调用 */
 const api = {
-  getData: (params) => request.post("Sys_User/IsConnection", params),
-  /*----------------------------------- 我的 -----------------------------------*/
+  getData: () => request.post("Sys_User/IsConnection"),
+  login: (params) => {
+    return request.post("Login/MobileCheckLogin", params);
+  },
+  //http://172.16.122.152:1023/Login/MobileCustomerGetGridJson
+  getList: (params) => {
+    return request.get("Login/MobileCustomerGetGridJson", params);
+  },
 };
 
 export default api;

@@ -35,6 +35,7 @@
 import { Swipe, SwipeItem, Popover, Toast, Button } from "vant";
 import { reactive, toRefs, ref, onMounted } from "vue";
 import lang from "../components/lang.vue";
+import api from "../api/api";
 // import { getCurrentInstance } from "@vue/runtime-core";
 export default {
   components: {
@@ -53,7 +54,11 @@ export default {
         require("../assets/banner2.jpeg"),
       ],
     });
-    onMounted(() => {});
+    onMounted(() => {
+      api.getList({ keyword: "", name: "ADF103" }).then((res) => {
+        console.log(res);
+      });
+    });
     return {
       showPopover,
       ...toRefs(state),

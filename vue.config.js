@@ -40,17 +40,18 @@ module.exports = {
   devServer: {
     open: true,
     host: "0.0.0.0",
-    port: 7080,
-    https: false,
-    hotOnly: false,
-    //proxy: {
-    //	'/api': {
-    //		target: 'http://localhost:3000/api',
-    //		changeOrigin: true,
-    //		pathRewrite: {
-    //			'^/api': ''
-    //		}
-    //	}
-    //}
+    port: 3001,
+    // https: false,
+    // hotOnly: false,
+    // proxy: {
+    //   "/": {
+    //     target: "http://172.16.122.152:1023",
+    //     changeOrigin: true,
+    //     ws: true,
+    //     pathRewrite: {
+    //       "^/": "",
+    //     },
+    //   },
+    // },
   },
 };

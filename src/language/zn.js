@@ -19,4 +19,7 @@ export default {
     loginT: "已有账号，立即登录",
     registerT: "立即注册",
   },
+  user: {
+    logOut: "退出登录",
+  },
 };
